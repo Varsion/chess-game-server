@@ -9,7 +9,7 @@ class ApplicationController < ActionController::API
 
   # POST /next_step
   # params: { position: "string", destination: "string" }
-  # return: { next_step: "string" }
+  # return: { next_step: "string", steps: "array", steps_count: "integer"}
   def next_step
     chess_service = ChessService.new(params[:position], params[:destination])
 

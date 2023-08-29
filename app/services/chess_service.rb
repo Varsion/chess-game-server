@@ -10,11 +10,17 @@ class ChessService < ApplicationService
 
   # BFS to get Knight shortest path
   def initialize(position, destination)
-    visited = []
     @steps_count = 0
+    @steps = []
+    @next_step = ""
+
+    build(position, destination)
+  end
+
+  def build(position, destination)
+    visited = []
     queue = [] << position
     node_steps = {}
-    @steps = []
 
     while !queue.empty?
       node = queue.pop
