@@ -13,8 +13,13 @@ class ChessService < ApplicationService
     @steps_count = 0
     @steps = []
     @next_step = ""
-
-    build(position, destination)
+    if position == destination
+      @steps_count = 0
+      @steps = [] << destination
+      @next_step = destination
+    else
+      build(position, destination)
+    end
   end
 
   def build(position, destination)
