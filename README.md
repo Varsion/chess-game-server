@@ -1,24 +1,26 @@
-# README
+# Chess Game Server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The backend code of a small game.
 
-Things you may want to cover:
+Frontend Repo: https://github.com/Varsion/chess-game-front
 
-* Ruby version
+## Debugging in Local
 
-* System dependencies
+- bundle install
+- rails server
 
-* Configuration
+## Demo
 
-* Database creation
+https://chess-game-server-fw18.onrender.com
 
-* Database initialization
+Power by [Render](https://render.com/), because it is a free version, the first request will start the service, so please wait for 2 minutes after the first request
 
-* How to run the test suite
+## Reference
 
-* Services (job queues, cache servers, search engines, etc.)
+[Breadth First Search](https://en.wikipedia.org/wiki/Breadth-first_search)
 
-* Deployment instructions
+[Knight’s Shortest Path on Chessboard](https://www.baeldung.com/cs/knights-shortest-path-chessboard)
 
-* ...
+## Related Blog
+
+https://blog.chongyaaa.pro/posts/20230831/
